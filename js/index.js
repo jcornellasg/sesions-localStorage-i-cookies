@@ -19,7 +19,7 @@ function crear() {
     const fecha = new Date();
     //document.cookie = "text=" + text +"; expires=" + fecha.toGMTString(); + "; path=/;";
     //console.log("fecha: " + fecha);
-    alert(fecha.toGMTString()+"Hola");
+    alert(fecha.toGMTString()+text);
 }
 
 function mostrar() {
