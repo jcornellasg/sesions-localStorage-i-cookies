@@ -1,7 +1,7 @@
 var text = "";
 const fecha = new Date();
 
-document.cookie = 'nombrecookie=valorcookie, max-age=7200, path=/';
+//document.cookie = 'nombrecookie=valorcookie, max-age=7200, path=/';
 
 document.getElementById("text").addEventListener("focusout", function () {
     text = document.getElementById("text").value;
@@ -16,10 +16,9 @@ document.getElementById("eliminar").addEventListener("click", eliminiar);
 function crear() {
      
     //document.cookie = "usuario=marko; expires=Thu, 18 Dec 2022 12:00:00 UTC; path=/";
-    //const fecha = new Date();
-    //document.cookie = "text=" + text +"; expires=" + fecha.toGMTString(); + "; path=/;";
+    const fecha = new Date();
+    document.cookie = "text=" + text +"; expires=" + fecha.toGMTString(); + "; path=/;";
     //console.log("fecha: " + fecha);
-    document.cookie = "nombrecookie=valorcookie; max-age=7200; path=/";
     alert(document.cookie);
 }
 
