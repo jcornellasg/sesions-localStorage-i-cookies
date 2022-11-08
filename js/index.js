@@ -29,7 +29,7 @@ function modificar() {
     document.cookie = "text=" + text;
 }
 function eliminiar() {
-    document.cookie = "text=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    //document.cookie = "text=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 }
 
 /*
