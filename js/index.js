@@ -81,5 +81,3 @@ function checkCookie() {
         }
     }
 }
-
-Hola
