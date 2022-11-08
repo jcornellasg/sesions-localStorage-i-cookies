@@ -17,9 +17,9 @@ function crear() {
      
     //document.cookie = "usuario=marko; expires=Thu, 18 Dec 2022 12:00:00 UTC; path=/";
     const fecha = new Date();
-    document.cookie = "text=" + text +"; expires=" + fecha.toGMTString(); + "; path=/;";
+    //document.cookie = "text=" + text +"; expires=" + fecha.toGMTString(); + "; path=/;";
     //console.log("fecha: " + fecha);
-    alert(document.cookie);
+    alert(fecha.toGMTString());
 }
 
 function mostrar() {
